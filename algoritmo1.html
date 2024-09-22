@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo 1</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+    <a href="index.html">Regresar al menu</a>
+
+    <script>
+        function multiplo3() {
+            if(!isNaN(document.getElementById("num1").value) && !isNaN(document.getElementById("num2").value)) {
+            var a = parseInt(document.getElementById("num1").value);
+            var b = parseInt(document.getElementById("num2").value);
+            var multiplos ="";
+            
+            for (let i = a; i <= b; i++) {
+                if (i%3==0) {
+                    multiplos+=`<br>${i}`
+                }
+                
+            }
+            if (a != b)
+            for (let i = a; i >= b; i--) {
+                if (i%3==0) {
+                    multiplos+=`<br>${i}`
+                }
+            
+        }
+            document.getElementById("out").innerHTML=`Resultado:<br> ${a}  y el otro es ${b} ${multiplos}`; 
+                
+            } else  {
+                document.getElementById("out").innerHTML='Por favor ingrese solo numeros';
+            }
+            
+        }
+
+    </script>
+</head>
+<body bgcolor="#EFD9AC">
+    <h1 style="font-size: 1.5rem">Encontrar e imprimir todos los numeros comprendidos entre dos enteros que son multiplos de 3.<br></h1>
+    Multiplo de 3<br>
+    dato1<input type="text" value="10" id="num1"><br>
+    dato2<input type="text" value="20" id="num2"><br>
+    <input type="button" value="Encontrar los multiplos" onclick="multiplo3()"><br>
+    <p id="out">Resultado:</p>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo Leibniz</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+    <a href="index.html">Regresar al menú</a>
+    <script>
+        function calcularPi() {
+            var numerador = 1;
+            var denominador = 1;
+            var valorPi = 0;
+            var suma = 0;
+            var mensajeResultado = "";
+            var numIteraciones = parseInt(document.getElementById("numIteraciones").value);
+            
+            if (isNaN(numIteraciones) || numIteraciones < 0) {
+                document.getElementById("resultado").innerHTML = `Resultado:<br> No es posible calcular debido a un error en los datos ingresados.`;
+            } else {
+                for (let i = 0; i < numIteraciones; i++) {
+                    if (i % 2 === 0) {
+                        suma += numerador / denominador;
+                        denominador += 2;
+                    } else {
+                        suma -= numerador / denominador;
+                        denominador += 2;
+                    }
+                    valorPi = 4 * suma;
+                    document.getElementById("resultado").innerHTML = `Resultado:<br>${valorPi}`;
+                }
+            }
+        }
+    </script>
+</head>
+<body bgcolor="#EFD9AC">
+    <h1 style="font-size: 1.5rem">Algoritmo 5 metodo Leibniz</h1>
+    <h4>Número de iteraciones:</h4> 
+    <input type="text" value="" id="numIteraciones">
+    <input type="button" value="Calcular" onclick="calcularPi()";>
+    <p id="resultado">Resultado:</p>
+</body>
+</html>

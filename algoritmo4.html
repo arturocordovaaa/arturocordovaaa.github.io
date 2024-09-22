@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algoritmo 5</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<script>
+    function fibonacci() {
+        var a = 1;
+        var b = 0;
+        var res = "";
+        var temp = 0;
+        var count = 0;
+        var lim = parseInt(document.getElementById("limite").value);
+
+        if (isNaN(lim) || lim <= 0) {
+            document.getElementById("out").innerHTML = "No es posible completar. Error en la captura de datos";
+        } else {
+            while (count < lim) {
+                res += b + " ";
+                b = temp + a;
+                temp = a;
+                a = b;
+                count++;
+            }
+            document.getElementById("out").innerHTML = `Resultado:<br>${res}`;
+        }
+    }
+</script>
+<body bgcolor="#EFD9AC">
+    <p><a href="index.html">Regresar al menú</a> <br></p>
+    <h1 style="font-size:1.5rem">Serie o sucesión de Fibonacci, solicite el límite al usuario</h1>
+    <p>Escriba el límite de la sucesión</p><br>
+    Escriba el límite <input type="text" value="" id="limite"><br>
+    <br><input type="button" value="Mostrar sucesión" onclick="fibonacci()"><br>
+    <p id="out">Resultado:</p><br>
+</body>
+</html>
