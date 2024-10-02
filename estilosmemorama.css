@@ -1,0 +1,15 @@
+    .imagen{
+            /*Ek width tambien se puede oner con %*/
+            width:200px;
+            height: 200px;
+        }
+    table{
+            background-image: url("../img/fondo2.jpg");
+            display: inline-table;
+        }
+        h1{
+            display:inline;    
+        }
+        input[type=button]{
+            font-size:large;
+        }
