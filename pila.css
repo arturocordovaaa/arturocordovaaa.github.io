@@ -1,0 +1,51 @@
+h1
+{
+    top: 20px;
+    left: 10px;
+    color: white;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+}
+
+body
+{
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+input[type=button]
+{
+    color: #EAE422;
+    background-color: #131213;
+    border-color: white;
+    font-family: Verdana, sans-serif;
+}
+
+tbody
+{
+    position: inherit;
+    border: none;
+    color: #EAE422;
+    background-color: #131213;
+    
+}
+img
+{
+    position: absolute;
+    top: 200px;
+    left: 850px;
+}
+
+#link
+{
+    color:#EAE422;
+    font-family: Verdana, sans-serif;
+}
+
+input[type=text]
+{
+    color: #EAE422;
+    background-color: #131213;
+    border-color: white;
+    font-family: Verdana, sans-serif;
+}
