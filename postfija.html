@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postfija</title>
+    <link rel="stylesheet" href="postfija.css">
+    <script src="postfijaOfuscado.js"></script>
+</head>
+<body bgcolor="#131213">
+    <p><a href="index.html" id="link"><--Volver al menú<br></p></a>
+    <h1 class="animated-border">Evaluación de expresión postfija</h1>
+    Expresión: <input type="text" name="" id="exp" value="3 4 * 2 5 + - 4 * 2 /">
+    <input type="button" id="botonEval" class="glow-button" value="Evaluar" onclick="Evaluar()">
+    <input type="button" id="botonPaso" class="glow-button" value="Paso a paso" onclick="pasoAPaso()">
+    <input type="button" id="botonRein" class="glow-button" value="Reiniciar" onclick="Reinicio()">
+    <p id="textResultado">Resultado: </p>
+    <table><tbody id="tabla"></tbody></table>
+    <p id="textPaso">Pasos: <br></p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+#textPaso {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+input[type="text"] {
+    width: 750px;
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+h1 {
+    font-family: Verdana, sans-serif;
+    color: #EAE422;
+}
+
+#textResultado {
+    color: #EAE422;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    color: white;
+}
+
+#link {
+    color: #EAE422;
+    font-family: Verdana, sans-serif;
+}
+
+/* Color del borde de las celdas de la tabla */
+#tabla td
+{
+    border: 1px solid #EAE422;
+}
+
+/* Efecto de resplandor en los botones con color amarillo */
+.glow-button {
+    background-color: #EAE422;
+    color: #131213;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(234, 228, 34, 0.4);
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 20px rgba(234, 228, 34, 0.7), 0 0 30px rgba(234, 228, 34, 0.5);
+}
